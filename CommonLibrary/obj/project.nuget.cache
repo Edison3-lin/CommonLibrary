@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "mX1rAdnHtEhNLpb0JOX4qqT+3KrVvvybxYquTwD/y3lH7POd/dvBrSAxjLHtc6b7UxEzdN/dAEZfuJLmITTh9A==",
+  "success": true,
+  "projectFilePath": "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\edison\\.nuget\\packages\\tesseract\\5.2.0\\tesseract.5.2.0.nupkg.sha512"
+  ],
+  "logs": []
+}

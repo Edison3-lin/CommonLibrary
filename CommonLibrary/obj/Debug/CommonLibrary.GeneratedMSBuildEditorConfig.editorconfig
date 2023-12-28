@@ -1,0 +1,5 @@
+is_global = true
+build_property.RootNamespace = CommonLibrary
+build_property.ProjectDir = C:\TestManager\TestManager\common-general-functions\CommonLibrary\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

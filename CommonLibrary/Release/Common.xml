@@ -1,0 +1,551 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>CommonLibrary</name>
+    </assembly>
+    <members>
+        <member name="M:CaptainWin.CommonAPI.Culture.TitleLog(System.String)">
+            <summary>
+            TitleLog
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Culture.ProcessLog(System.String)">
+            <summary>
+            Log
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Culture.GetCulture">
+            <summary>
+            GetCulture UI
+            </summary>
+        </member>
+        <member name="T:CaptainWin.CommonAPI.DoReboot">
+            <summary>
+            Reboot the system
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.DoReboot.Reboot(System.Int32)">
+            <summary>
+            Reboot the system
+            </summary>
+            <param name="sec">Seconds to wait before reboot</param>
+        </member>
+        <member name="T:CaptainWin.CommonAPI.DoSleep">
+            <summary>
+            This method sleeps for a specified duration based on the sleep type and count.
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.DoSleep.Sleep(System.Int32,System.Int32)">
+            <summary>
+            This method sleeps for a specified duration based on the sleep type and count.
+            </summary>
+            <param name="type">The sleep type.</param>
+            <param name="count">The duration to sleep for, depending on the sleep type.</param>    /// 
+        </member>
+        <member name="T:CaptainWin.CommonAPI.Smode">
+            <summary>
+            Get WMI function
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Smode.TitleLog(System.String)">
+            <summary>
+            TitleLog
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Smode.ProcessLog(System.String)">
+            <summary>
+            Log
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Smode.GetSmode">
+            <summary>
+            GetSetSmode
+            </summary>
+        </member>
+        <member name="T:CaptainWin.CommonAPI.GetSystemInfo">
+            <summary>
+            Get WMI function
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.TitleLog(System.String)">
+            <summary>
+            TitleLog
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.ProcessLog(System.String)">
+            <summary>
+            ProcessLog
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetOSVersion">
+            <summary>
+            GetOSVersion
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetSystemType">
+            <summary>
+            GetSystemType
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetCPUCount">
+            <summary>
+            GetCPUCount
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetCpuId">
+            <summary>
+            CPUID
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetDiskDevice">
+            <summary>
+            GetDiskDevice
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetDiskSpace">
+            <summary>
+            GetDiskSpace
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetProcessorName">
+            <summary>
+            GetProcessorName
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetRunningTime">
+            <summary>
+            GetRunningTime
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.GetSystemInfo.GetPhysicalMemory">
+            <summary>
+            GetPhysicalMemory
+            </summary>
+        </member>
+        <member name="T:CaptainWin.CommonAPI.SysInfo">
+            <summary>
+            Get WMI function
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.SysInfo.ProcessLog(System.String)">
+            <summary>
+            Log
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.SysInfo.GetWMI(System.String)">
+            <summary>
+            Get WMI function
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.HDMI.TitleLog(System.String)">
+            <summary>
+            TitleLog
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.HDMI.ProcessLog(System.String)">
+            <summary>
+            Log
+            </summary>
+        </member>
+        <member name="T:CaptainWin.CommonAPI.TestOperation">
+            <summary>
+            This class contains common test operations for test items
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.TestOperation.IsProcessAdmin">
+            <summary>
+            Check if the current process is running as administrator 
+            </summary>
+            <returns>True if the current process is running as administrator</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.TestOperation.IsUserAdmin">
+            <summary>
+            Check if the current user is administrator
+            </summary>
+            <returns>True if the current user is administrator</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.TestOperation.Run(System.String[])">
+            <summary>
+            Run a file as administrator. Can run batch, cmd, exe...etc.
+            </summary>
+            <param name="args">Path of the file to run and its arguments</param>
+            <returns>Output of the file</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.TestOperation.RunWait(System.String[])">
+            <summary>
+            Run a file as administrator. Can run batch, cmd, exe...etc.
+            And wait for the process to exit.
+            </summary>
+            <param name="args">Path of the file to run and its arguments</param>
+            <returns>Output of the file</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.TestOperation.RunPS1(System.String[])">
+            <summary>
+            Run a powershell script as administrator.
+            </summary>
+            <param name="args">Path of the powershell script to run and its arguments</param>
+            <returns>Output of the powershell script</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.TestOperation.RunPS1Wait(System.String[])">
+            <summary>
+            Run a powershell script as administrator.
+            And wait for the process to exit.
+            </summary>
+            <param name="args">Path of the powershell script to run and its arguments</param>
+            <returns>Output of the powershell script</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.TestOperation.Reboot(System.Int32)">
+            <summary>
+            Reboot the system
+            </summary>
+            <param name="sec">Seconds to wait before reboot</param>
+        </member>
+        <member name="T:CaptainWin.CommonAPI.UserInput">
+            <summary>
+            Thie class simulates user input
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.Mouse_Move(System.Int32,System.Int32)">
+            <summary>
+            Move mouse to x,y
+            </summary>
+            <param name="x">x coordinate of the cursor</param>
+            <param name="y">y coordinate of the cursor</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.Mouse_LeftClick(System.Int32)">
+            <summary>
+            Click left button of mouse
+            </summary>
+            <param name="time">The time to hold the button</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.Mouse_HoldLeft">
+            <summary>
+            Press and hold left button of mouse
+            </summary>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.Mouse_ReleaseLeft">
+            <summary>
+            Release left button of mouse
+            </summary>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.Mouse_RightClick(System.Int32)">
+            <summary>
+            Click right button of mouse
+            </summary>
+            <param name="time">The time to hold the button</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.Mouse_HoldRight">
+            <summary>
+            Press and hold right button of mouse
+            </summary>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.Mouse_ReleaseRight">
+            <summary>
+            Release right button of mouse
+            </summary>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_TypeChar(System.Char)">
+            <summary>
+            Type a char simulating keyboard input
+            </summary>
+            <param name="key">The char to be pressed</param>
+            <returns></returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_HoldChar(System.Char)">
+            <summary>
+            Press and hold a char simulating keyboard input
+            </summary>
+            <param name="key">The char to be pressed</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_ReleaseChar(System.Char)">
+            <summary>
+            Release a char simulating keyboard input
+            </summary>
+            <param name="key">The char to be released</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_TypeString(System.String)">
+            <summary>
+            Type string simulating keyboard input
+            </summary>
+            <param name="text">string to type</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressHotKeys(System.String[],System.Int32)">
+            <summary>
+            Press a combination of keys together as hotkeys
+            </summary>
+            <param name="keys">String of keys to be pressed</param>
+            <param name="time">The time to hold the keys</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_HoldSpecialKey(System.String)">
+            <summary>
+            Press and hold a special key to help PressHotKeys
+            </summary>
+            <param name="key">String of special key to be pressed</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_ReleaseSpecialKey(System.String)">
+            <summary>
+            Release a special key to help PressHotKeys
+            </summary>
+            <param name="key">String of special key to be released</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressFunctionKey(System.Int32,System.Int32)">
+            <summary>
+            Press function key
+            </summary>
+            <param name="key">the number of function key to be pressed </param>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_HoldFunctionKey(System.Int32)">
+            <summary>
+            Hold function key
+            </summary>
+            <param name="key">the number of function key to be pressed </param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_ReleaseFunctionKey(System.Int32)">
+            <summary>
+            Release function key
+            </summary>
+            <param name="key">the number of function key to be pressed </param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressWin(System.Int32)">
+            <summary>
+            Press windows key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressEscape(System.Int32)">
+            <summary>
+            Press escape key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressBackspace(System.Int32)">
+            <summary>
+            Press backspace key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressSpace(System.Int32)">
+            <summary>
+            Press space key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressEnter(System.Int32)">
+            <summary>
+            Press enter key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressLShift(System.Int32)">
+            <summary>
+            Press left shift key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressRShift(System.Int32)">
+            <summary>
+            Press right shift key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressLCTRL(System.Int32)">
+            <summary>
+            Press left control key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressRCTRL(System.Int32)">
+            <summary>
+            Press right control key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressLALT(System.Int32)">
+            <summary>
+            Press left alt key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressRALT(System.Int32)">
+            <summary>
+            Press right alt key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressLeft(System.Int32)">
+            <summary>
+            Press left arrow key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressUp(System.Int32)">
+            <summary>
+            Press up arrow key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressRight(System.Int32)">
+            <summary>
+            Press right arrow key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressDown(System.Int32)">
+            <summary>
+            Press down arrow key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressDelete(System.Int32)">
+            <summary>
+            Press delete key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressTab(System.Int32)">
+            <summary>
+            Press tab key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.UserInput.KB_PressCapsLock(System.Int32)">
+            <summary>
+            Press caps lock key
+            </summary>
+            <param name="time">The time to hold the key</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="T:CaptainWin.CommonAPI.Window">
+            <summary>
+            Thie class contains operations for specific window
+            </summary>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Window_Exists(System.String,System.Boolean)">
+            <summary>
+            Check if a specific window exists
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitle">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <returns>True if the window exists, false if not</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Window_Focus(System.String,System.Boolean)">
+            <summary>
+            Focus on a specific window
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitle">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Window_Close(System.String,System.Boolean)">
+            <summary>
+            Close a specific window
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitle">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Window_Minimize(System.String,System.Boolean)">
+            <summary>
+            Minimize a specific window
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitle">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Window_Maximize(System.String,System.Boolean)">
+            <summary>
+            Maximize a specific window
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitle">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Button_Find(System.String,System.Boolean,System.String,System.Boolean)">
+            <summary>
+            Find a button on a specific window with its title
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitleW">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <param name="button">Identifier of the title or the ID of the button</param>
+            <param name="isTitleB">True if the identifier is the title of the button,
+            false if the identifier is the ID of the button</param>
+            <returns>the ID of the button if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Button_Click(System.String,System.Boolean,System.String,System.Boolean,System.Int32)">
+            <summary>
+            Click a button on a specific window with its title or ID
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitleW">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <param name="button">Identifier of the title or the ID of the button</param>
+            <param name="isTitleB">True if the identifier is the title of the button,
+            false if the identifier is the ID of the button</param>
+            <param name="time">Time to hold the button in seconds</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Mouse_Move(System.String,System.Boolean,System.Int32,System.Int32)">
+            <summary>
+            Move mouse to x,y on a specific window
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitle">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <param name="x">x coordinate of the cursor</param>
+            <param name="y">y coordinate of the cursor</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+        <member name="M:CaptainWin.CommonAPI.Window.Mouse_Click(System.String,System.Boolean,System.Int32,System.Int32,System.Int32)">
+            <summary>
+            Click mouse on a specific window
+            </summary>
+            <param name="window">Identifier of the title or the ID of the window</param>
+            <param name="isTitle">True if the identifier is the title of the window,
+            false if the identifier is the ID of the window</param>
+            <param name="x">x coordinate of the cursor</param>
+            <param name="y">y coordinate of the cursor</param>
+            <param name="time">Time to hold the mouse button in seconds</param>
+            <returns>0 if success, -1 if error</returns>
+        </member>
+    </members>
+</doc>

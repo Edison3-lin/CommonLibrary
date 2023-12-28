@@ -1,0 +1,60 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj": {}
+  },
+  "projects": {
+    "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj",
+        "projectName": "CommonLibrary",
+        "projectPath": "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj",
+        "packagesPath": "C:\\Users\\edison\\.nuget\\packages\\",
+        "outputPath": "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\edison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "default"
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Tesseract": {
+              "target": "Package",
+              "version": "[5.2.0, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
