@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj": {}
+    "C:\\TestManager\\TestManager\\CommonLibrary\\CommonLibrary\\CommonLibrary.csproj": {}
   },
   "projects": {
-    "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj": {
+    "C:\\TestManager\\TestManager\\CommonLibrary\\CommonLibrary\\CommonLibrary.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj",
+        "projectUniqueName": "C:\\TestManager\\TestManager\\CommonLibrary\\CommonLibrary\\CommonLibrary.csproj",
         "projectName": "CommonLibrary",
-        "projectPath": "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\CommonLibrary.csproj",
-        "packagesPath": "C:\\Users\\edison\\.nuget\\packages\\",
-        "outputPath": "C:\\TestManager\\TestManager\\common-general-functions\\CommonLibrary\\obj\\",
+        "projectPath": "C:\\TestManager\\TestManager\\CommonLibrary\\CommonLibrary\\CommonLibrary.csproj",
+        "packagesPath": "C:\\Users\\ediso\\.nuget\\packages\\",
+        "outputPath": "C:\\TestManager\\TestManager\\CommonLibrary\\CommonLibrary\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\edison\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ediso\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

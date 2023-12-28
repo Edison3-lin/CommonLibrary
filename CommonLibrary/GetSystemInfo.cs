@@ -192,36 +192,39 @@ namespace CaptainWin.CommonAPI {
 		public static void GetPhysicalMemory() {
             TitleLog("GetPhysicalMemory");
             // *** The first method
-            // try {
-            //     ManagementObjectSearcher searcher = new ManagementObjectSearcher("Select * From Win32_OperatingSystem");
-            //     foreach (ManagementObject mo in searcher.Get()) {
-            //         ulong totalSpace = Convert.ToUInt64(mo.Properties["TotalVisibleMemorySize"].Value) / (1024*1024);
-            //         ulong freeSpace = Convert.ToUInt64(mo.Properties["FreePhysicalMemory"].Value) / (1024*1024);     
-            //         string myString = string.Format("<TotalVisibleMemorySize>: {0,10} GB  <FreePhysicalMemory>: {1,10} GB", totalSpace, freeSpace);
-            //         ProcessLog(myString);
-            //     }
-            // }
-            // catch (Exception ex) {
-            //     ProcessLog(new StringBuilder("Failed to get memory").Append(ex.Message).ToString());
-            // }
-
-            // *** Second method
-            System.Diagnostics.Process process = new System.Diagnostics.Process();
-            process.StartInfo.FileName = "cmd.exe";
-            process.StartInfo.Arguments = $"/c systeminfo";
-            process.StartInfo.UseShellExecute = false;
-            process.StartInfo.RedirectStandardOutput = true;
-            process.Start();
-            string output = process.StandardOutput.ReadToEnd();
-            process.WaitForExit();
-            // ProcessLog(output); 
-            string[] substrings = output.Split('\n');           
-            foreach (string line in substrings)
-            {
-                if( line.Contains("Total Physical Memory:") | line.Contains("Available Physical Memory:") ) {
-                    ProcessLog(line);            
+            try {
+                ManagementObjectSearcher searcher = new ManagementObjectSearcher("Select * From Win32_OperatingSystem");
+                foreach (ManagementObject mo in searcher.Get()) {
+                    ulong totalSpace = Convert.ToUInt64(mo.Properties["TotalVisibleMemorySize"].Value) / (1024);
+                    ulong freeSpace = Convert.ToUInt64(mo.Properties["FreePhysicalMemory"].Value) / (1024);     
+                    string myString = string.Format("<TotalVisibleMemorySize>: {0,10} MB  <FreePhysicalMemory>: {1,10} MB", totalSpace, freeSpace);
+                    ProcessLog(myString);
                 }
             }
+            catch (Exception ex) {
+                ProcessLog(new StringBuilder("Failed to get memory").Append(ex.Message).ToString());
+            }
+
+            // *** Second method
+            // System.Diagnostics.Process process = new System.Diagnostics.Process();
+            // process.StartInfo.FileName = "cmd.exe";
+            // process.StartInfo.Arguments = $"/c systeminfo";
+            // process.StartInfo.UseShellExecute = false;
+            // process.StartInfo.RedirectStandardOutput = true;
+            // process.Start();
+            // string output = process.StandardOutput.ReadToEnd();
+            // process.WaitForExit();
+            // // ProcessLog(output); 
+            // string[] substrings = output.Split('\n');           
+            // foreach (string line in substrings)
+            // {
+            //     if( line.Contains("Total Physical Memory:") | line.Contains("Available Physical Memory:") ) {
+            //         ProcessLog(line);            
+            //     }
+            //     if( line.Contains("實體記憶體總計:") | line.Contains("可用實體記憶體:") ) {
+            //         ProcessLog(line);            
+            //     }
+            // }
         }
     }
 }
